@@ -9,6 +9,8 @@
             <h1>
                 MarkdownMail
                 <span class="pull-right hidden-xs">
+                    <a href="https://ko-fi.com/acelords" target="_blank">Buy us Coffee</a> &middot;
+                    <a href="https://twitter.com/acelords" target="_blank">Talk to us on Twitter</a> &middot; 
                     <a href="{{ route('login', 'github') }}">
                         <i class="fa fa-github"></i> Login with Github
                     </a>
@@ -21,6 +23,11 @@
 
             <a href="{{ route('login', 'github') }}" class="btn btn-default btn-lg"><i class="fa fa-github"></i> Get
                 Started</a>
+                <p>
+                    <a href="https://ko-fi.com/acelords" target="_blank" style="color: white">Buy us Coffee</a> &middot;
+                        <a href="https://twitter.com/acelords" target="_blank" style="color: white">Talk to us on Twitter</a> &middot; 
+                </p>
+                <br/>
 
             <div class="welcome-screen">
 
@@ -72,6 +79,9 @@
 
             <p class="pull-right">
                 <small>Created by <a href="https://twitter.com/bobbybouwmann">Bobby Bouwmann</a></small>
+                &middot;
+                <small>Maintained by <a href="https://twitter.com/SyntaxLexx">SyntaxLexx,</a></small>
+                <small><a href="https://github.com/acelords">AceLords</a></small>
             </p>
 
         </div>

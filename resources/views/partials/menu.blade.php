@@ -14,12 +14,14 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
 
-                @if (auth()->check())
-                    <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
+                    @if (auth()->check())
                         <li {{ Request::is('themes') ? 'class=active' : '' }}><a href="{{ route('themes.index') }}">My Themes</a></li>
                         <li {{ Request::is('themes/new') ? 'class=active' : '' }}><a href="{{ route('themes.create') }}">New Theme</a></li>
-                    </ul>
-                @endif
+                    @endif
+                    <li><a href="https://ko-fi.com/acelords" target="_blank">Buy us Coffee</a></li>
+                    <li><a href="https://twitter.com/acelords" target="_blank">Talk to us on Twitter</a></li>
+                </ul>
 
                 <ul class="nav navbar-nav navbar-right">
 
