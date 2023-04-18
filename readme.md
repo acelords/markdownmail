@@ -1,11 +1,22 @@
+# Laravel Mailables Markdown
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+
+![Screenshot 1](public/images/screenshot-2.jpg)
+![Screenshot 1](public/images/screenshot.png)
+
+## Links
+Head over to [https://markdownmail.acelords.com](https://markdownmail.acelords.com) to generate a theme.
+
+>NB: can also generate HTML and CSS for Node-Mailer
+
+[Support development by making us chug cups of coffee ;)](https://ko-fi.com/acelords)
 
 ## About Laravel
 
