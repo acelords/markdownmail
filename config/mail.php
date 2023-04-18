@@ -45,6 +45,18 @@ return [
             'auth_mode' => null,
         ],
 
+        // install via docker - https://github.com/axllent/mailpit
+        'mailpit' => [
+            'transport' => 'smtp',
+            'host' => env('MAIL_HOST', '0.0.0.0'),
+            'port' => env('MAIL_PORT', 1025),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
+            'timeout' => null,
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+        ],
+
         'ses' => [
             'transport' => 'ses',
         ],
