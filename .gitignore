@@ -1,9 +1,6 @@
 /node_modules
 /public/storage
 /public/hot
-/public/css
-/public/js
-/public/fonts
 /public/mix-manifest.json
 /storage/*.key
 /storage/debugbar
