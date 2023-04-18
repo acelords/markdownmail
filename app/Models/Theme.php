@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 
 class Theme extends Model
 {
@@ -42,7 +43,11 @@ class Theme extends Model
      */
     public function generateColors()
     {
-        return Color::all()->map(function (Color $color) {
+        $colors = Cache::remember('users', 60 * 60 * 24, function () {
+            return Color::all();
+        });
+
+        return $colors->map(function (Color $color) {
             $customColor = isset($this->colors[$color->identifier]) ? $this->colors[$color->identifier] : null;
 
             return [

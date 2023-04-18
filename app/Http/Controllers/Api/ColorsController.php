@@ -6,6 +6,7 @@ use App\Models\Color;
 use App\Http\Controllers\ApiController;
 use App\Models\Theme;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class ColorsController extends ApiController
 {
@@ -35,6 +36,9 @@ class ColorsController extends ApiController
         $theme->update([
             'colors' => array_merge($colors, [$identifier => $request->color]),
         ]);
+
+        // refresh cache
+        Cache::forget('colors');
 
         return $theme->colors;
     }
